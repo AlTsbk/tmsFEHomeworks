@@ -8,17 +8,13 @@ console.log("Результат" + " " + xyz);
 
 // Task 2
 
-let KоличествоCекундВМинуте = 60;
-let KоличествоМинутВЧасу = 60;
-let KоличествоЧасовВСутки = 24;
-let KоличествоСутокВГоду = 365;
+let SecondsInAMinute = 60;
+let MinutesInAHour = 60;
+let HoursInADay = 24;
+let DaysInAYear = 365;
 let MyAge = 29;
 let myAgeInSeconds =
-  MyAge *
-  KоличествоСутокВГоду *
-  KоличествоЧасовВСутки *
-  KоличествоМинутВЧасу *
-  KоличествоCекундВМинуте;
+  MyAge * DaysInAYear * HoursInADay * MinutesInAHour * SecondsInAMinute;
 
 console.log("Мой возраст" + " " + myAgeInSeconds + " " + "секунд ");
 
@@ -65,23 +61,17 @@ let thirdVariableType = 6;
 
 console.log(
   firstVariableType +
-    ": " +
-    "firstVariableType " +
-    "have type: " +
+    ": firstVariableType have type: " +
     typeof firstVariableType
 );
 console.log(
   secondVariableType +
-    ": " +
-    "secondVariableTyp " +
-    "have type: " +
+    ": secondVariableTyp have type: " +
     typeof secondVariableType
 );
 console.log(
   thirdVariableType +
-    ": " +
-    "thirdVariableType " +
-    "have type: " +
+    ": thirdVariableType have type: " +
     typeof thirdVariableType
 );
 
