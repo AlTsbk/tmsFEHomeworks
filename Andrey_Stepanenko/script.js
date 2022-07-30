@@ -29,7 +29,7 @@ console.log(myAgeInSeconds);
 let count = 42;
 let UserName = '42';
 
-let change = toString(count);
+let change = String(count);
 console.log(count);
 let change2 = parseInt(UserName);
 let change3 = String(count);
