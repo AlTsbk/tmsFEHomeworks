@@ -30,6 +30,7 @@ let count = 42;
 let UserName = '42';
 
 let change = toString(count);
+console.log(count);
 let change2 = parseInt(UserName);
 let change3 = String(count);
 let change4 = +UserName;
