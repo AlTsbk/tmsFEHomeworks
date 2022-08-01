@@ -19,14 +19,20 @@ alert((days * age) * huor * minute * secont);
 // Task 3
 
 let count = 42;
-let userName = 42;
+let userName = "42";
 
 
-let scount = String(42);
-let nuserName = +'42';
+let scount = ("" + count);
+let nuserName = parseInt(userName);
 
-let nCount = console.log(Number.(userName));
-let suserName = console.log(String.(count));
+let scount2 = String(count);
+let nuserName2 = +userName;
+
+console.log(scount);
+console.log(nuserName );
+console.log(scount2);
+console.log(nuserName2);
+
 
 
 // Task 4
