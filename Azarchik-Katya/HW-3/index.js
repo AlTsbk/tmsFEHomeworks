@@ -120,7 +120,7 @@ let e = 17;
 let p = undefined;
 let u = null;
 
-console.log(typeof h, t, e, p, u);
+console.log(typeof h, typeof t, typeof e, typeof p, typeof u);
 
 // Task 2 С помощью условий выведите в консоль разработчика наибольшее число.
 
