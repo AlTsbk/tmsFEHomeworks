@@ -44,6 +44,12 @@
 // let apple = false
 // let orange = true
 
+// if(key && documents && pen && (apple || orange)) {
+//     let shouldGoToWork = console.log('Все готово! Можешь отправлятся на работу')
+// } else {
+//     let shouldGoToWork = console.log('Кажется ты что то забыл')
+// }
+
 
 // task 5
 
