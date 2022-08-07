@@ -118,11 +118,14 @@
 // function sumSalaries(salaries) {
 
 //     let sum = 0;
+//     let midsum = 0;
 //     for (let salary of Object.values(salaries)) {
 //       sum += salary;
+//       midsum += 1;
+//       midsalari = sum / midsum; 
 //     }
   
-//     return sum;
+//     return midsalari;
 //   }
 
 //   console.log(sumSalaries(salaries));
@@ -173,21 +176,27 @@
 // ```
 
 
-let student1 = {
-    name: 'Polina',
-    age: 27,
-}
+// let student1 = {
+//     name: 'Polina',
+//     age: 27,
+// }
 
-let student2 = {
-    name: 'Polina',
-    age: 27,
-}
+// let student2 = {
+//     name: 'Polina',
+//     age: 27,
+// }
 
-function ConcatObjects(oFirstObj, oSecondObj) {
-    for (const key in oSecondObj) {
-        if(oFirstObj[key] === oSecondObj[key])
-        console.log('объекты равны')
-    }
-}
+// function ConcatObjects(oFirstObj, oSecondObj) {
+//     for (const key in oSecondObj) {
+//         if(oFirstObj[key] === oSecondObj[key])
+//         console.log('объекты равны')
+//     }
+// }
 
-console.log(ConcatObjects(student1, student2))
+// console.log(ConcatObjects(student1, student2))
+
+
+
+// #### Task 1 👨‍🏫
+
+// Мы на футбольном матче, счет забитых голов одной команды не может превышать 9 мячей. Жаль что нам присылают результат матча в формате '2:5', ведь нам надо это вывести в консоль словами. Давайте напишем программу которая будет за нас переводить формат и выводить результат в консоль. 

@@ -46,7 +46,16 @@
 
 // После вызова функция должна вернуть переданную строку обрезанную по значениям от и по
 
+// let string = prompt("Введите строку");
+// let trimStringFrom = +prompt("Значение от");
+// let trimStringTo = +prompt("Значение по");
 
+// function trimString(stringT, trimFrom, trimTo) {
+//   let resultString = "";
+//   resultString += stringT.substring(trimFrom, trimTo);
+//   return resultString;
+// }
+// console.log(trimString(string, trimStringFrom, trimStringTo));
 
 
 
@@ -81,25 +90,21 @@
 // > Если переданное булевое значение **true** запускаем функцию **foo** иначе **boo**
 
 
-    // function fooBoo(bln, foo, boo) {
-    //     if (bln === true) {
-    //         function foo(){
-                
-    //             let result = foo.name;
-    //             return result;
-                
-    //         }
-          
-    //     } else {
-    //         function boo(){
-    //             var booName = 'boo'
-    //             console.log(boo.name);
-                
-    //         } 
-    //     }   
-    // }
-
-    // console.log(fooBoo(true));
+// function boo() {
+//     console.log("Boo");
+//   }
+// function foo() {
+//     console.log("Foo");
+//   }
+  
+//   function fooBoo(boolValue, booValue, fooValue) {
+//     if (boolValue) {
+//       fooValue();
+//     } else {
+//       booValue();
+//     }
+//   }
+//   fooBoo(true, boo, foo);
 
 
 
@@ -121,4 +126,30 @@
 
     //   console.log(getSum(1,1));
 
-    
+
+
+
+
+//     ADVANCED level
+// Task 1 👨‍🏫
+// Реализуйте функцию, который принимает 3 целочисленных значения a, b, c. Функция должна возвращать true, если треугольник можно построить со сторонами заданной длины, и false в любом другом случае.
+
+    // let a = +prompt('Введите первую сторону');
+    // let b = +prompt('Введите вторую сторону');
+    // let c = +prompt('Введите третью сторону');
+
+    // function triangle (a, b, c) {
+    //     if ((a + b)>c && (b + c)>a && (a + c)>b) {
+    //         alert('Треугольник существует')
+    //     } else {
+    //         alert('Это не треугольник')
+    //     }
+    // }
+
+    // triangle(a,b,c);
+
+
+    // Task 3 👨‍🏫
+
+
+ 
