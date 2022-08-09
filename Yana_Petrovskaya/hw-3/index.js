@@ -118,7 +118,6 @@
 
 // Task 3.
 
-// for (let i = '#';; i = i + '#') {
-//   console.log(i);
-//   if(i.length > 6) break;
-// }
+for (let i = '#'; i.length <= 6; i = i + '#') {
+  console.log(i);
+}
