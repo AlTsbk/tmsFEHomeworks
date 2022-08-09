@@ -283,7 +283,7 @@ let trimStringTo = +prompt("Значение по");
 
 function trimString(stringT, trimFrom, trimTo) {
   let resultString = "";
-  resultString += stringT.substring(trimFrom, trimTo);
+  resultString = stringT.substring(trimFrom, trimTo);
   return resultString;
 }
 console.log(trimString(string, trimStringFrom, trimStringTo));
@@ -311,12 +311,12 @@ function getSumNumber(firstNumber, lastNumber) {
   let first = firstNumber < lastNumber ? firstNumber : lastNumber;
   let last = firstNumber < lastNumber ? lastNumber : firstNumber;
   let result = 0;
-  for (let i = first; i <= last; i++) {
-    if (first === last) {
-      result = i;
-    } else {
+  if (first !== last) {
+    for (let i = first; i <= last; i++) {
       result += i;
     }
+  } else {
+    result = first;
   }
   return result;
 }
@@ -378,28 +378,28 @@ console.log(division(n, m));
 
 let amountOnAccount = +prompt("Введите баланс банковского счета");
 const priceOfPhone = 199.99;
-const taxRate = 10;
+const taxRate = 0.1;
 const priceOfAccessories = 5.67;
+let resultOfBying = 0;
 
-function byingOfPhones(money, pricePh, rate, priceAcs) {
-  let resultOfBying = 0;
-  while (resultOfBying <= money) {
-    resultOfBying += pricePh;
-  }
-  if (resultOfBying < money) {
-    resultOfBying += priceAcs;
-  }
-  resultOfBying = resultOfBying * (1 + rate / 100);
-  if (resultOfBying > money) {
-    console.log(
-      `Вы не можете себе позволить эту покупку. Сумма на вашем счету ${money.toFixed(
-        2
-      )}$`
-    );
-  }
-  return `Сумма вашей покупки ${resultOfBying.toFixed(2)}$`;
+function sumTax(tax) {
+  return resultOfBying * taxRate;
+}
+function formatResult(format) {
+  return "$" + resultOfBying.toFixed(2);
 }
 
-console.log(
-  byingOfPhones(amountOnAccount, priceOfPhone, taxRate, priceOfAccessories)
-);
+while (resultOfBying <= amountOnAccount) {
+  resultOfBying += priceOfPhone;
+}
+if (resultOfBying < amountOnAccount) {
+  resultOfBying += priceOfAccessories;
+}
+
+resultOfBying += sumTax(resultOfBying);
+
+console.log("Сумма вашей покупки " + formatResult(resultOfBying));
+
+if (resultOfBying > amountOnAccount) {
+  console.log("Вы не можте себе позволить эту покупку ");
+}
