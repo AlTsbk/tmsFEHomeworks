@@ -28,31 +28,29 @@
 
 // Task 3.
 
-// trimString();
+// let sString = prompt('Введите текст.');
+// let nFrom = +prompt('Введите значение "от".');
+// let nTo = +prompt('Введите значение "до".');
 
-// function trimString() {
-//   let sString = prompt('Введите текст.');
-//   let nFrom = +prompt('Введите значение "от".');
-//   let nTo = +prompt('Введите значение "до".');
-  
+// trimString(sString, nFrom, nTo);
+
+// function trimString(sString, nFrom, nTo) {
 //   alert(sString.substring(nFrom, nTo));
 // }
 
 // Task 4.
 
-// getSumNumbers ();
+// let nNumber = +prompt('Введите число.');
+// getSumNumbers(nNumber);
 
-// function getSumNumbers() {
-//   let nNumber = +prompt('Введите число.');
+// function getSumNumbers(nNumber) {
 //   sNumber = nNumber.toString();
 //   output = [];
-
-//   for ( let i = 0, len = sNumber.length; i < len; i++) {
-//     output.push(+sNumber.charAt(i));
+//   let sum = 0; 
+//   for ( let i = 0; i < sNumber.length; i++) {
+//     sum += +sNumber.charAt(i);
 //   }
-//   let sum = 0;
-//   for (let i = 0; i < output.length; sum += output[i++]);
-//   alert(sum);
+//   alert(sum);  
 // }
 
 // Task 5.
@@ -63,38 +61,36 @@
 // getSum (nFirstNumber, nLastNumber);
 
 // function getSum(a, b) {
-//   let sum = 0;
 //   if (a === b) {
 //     alert(a + '. Числа одинаковы.');
-//   } else if (a < b) {
-//     for( let i = a; i <= b; i++) {
+//   } else {
+//     let min = Math.min(a, b);
+//     let max = Math.max(a, b);
+//     let sum = 0;
+//     for(let i = min; i <= max; i++) {
 //       sum += i;
 //     }
-//   } else if (a > b) {
-//     for( let i = b; i <= a; i++) {
-//       sum += i;
-//     }
-//   }
-//   alert(sum);
+//     alert(sum);
+//   } 
 // }
 
 // Task 6.
 
 // let bBoolean = true;
-
-// if(bBoolean) {
-//   foo();
-// } else {
-//   boo();
-// }
-
 // function foo() {
 //   console.log(foo.name);
 // }
 // function boo() {
 //   console.log(boo.name);
 // }
-
+// fooboo(bBoolean, foo, boo);
+// function fooboo(bBoolean, foo, boo) {
+//   if(bBoolean) {
+//     foo();
+//   } else {
+//     boo();
+//   }
+// }
 // ADVANCED level
 
 // Task 1.
@@ -128,7 +124,7 @@
 //   if (n === 0 || m === 0) {
 //     alert('Количество надломов: 0.');
 //   } else {
-//     let nNumberOfBreaks = (n - 1) + (m - 1);
+//     let nNumberOfBreaks = (n - 1) + ((m - 1)*m);
 //   alert('Количество надломов: ' + nNumberOfBreaks);
 //   }
 // }
