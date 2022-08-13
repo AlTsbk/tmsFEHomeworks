@@ -94,9 +94,13 @@
 
 //Task 1
 
-// let UserName = prompt("Как вас зовут");
-// let UserNameLower = UserName.toLowerCase();
-// alert ("Привет " + UserNameLower);
+let UserName = prompt("Введите ваше имя");
+let UserFname = prompt("Введите вашу Фамилию");
+let UserNameLower = UserName.charAt(0).toUpperCase() + UserName.slice(1).toLowerCase();
+let UserFNameLower = UserFname.charAt(0).toUpperCase() + UserFname.slice(1).toLowerCase();
+alert ("Привет " + UserNameLower + " " + UserFNameLower);
+
+
 
 // Task 2 
 
@@ -111,9 +115,8 @@
 // Task 3
 
 
-let aCicle = "#"
+// let aCicle = "#"
 
-for (let i = aCicle;; i = i + "#") {
-  console.log(i);
-  if(i.length > 10) break;
-}
+// for (let i = aCicle; i.length > 10; i = i + "#") {
+//   console.log(i);
+// }
