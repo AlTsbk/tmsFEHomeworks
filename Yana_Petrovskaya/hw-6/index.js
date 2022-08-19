@@ -93,14 +93,17 @@
 // ];
 
 // function arrMean(array) {
-//   sum = 0;
-//   for(let i of array) {
-//     sum += i;
+//   let sString = array.join( );
+//   let oneArr = sString.split(',');
+//   let sum = 0;
+//   for(let i of oneArr) {
+//     i = +i;
+//     sum += i; 
 //   }
-//   return mean = sum / array.length;
+//   let mean = sum / oneArr.length;
+//   return mean;
 // }
-// const result = matrix.map(arrMean);
-// console.log(result);
+// console.log(arrMean(matrix));
 
 // Task 3.
 
