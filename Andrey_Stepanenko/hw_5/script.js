@@ -186,17 +186,48 @@
 //     age: 27,
 // }
 
-// function ConcatObjects(oFirstObj, oSecondObj) {
-//     for (const key in oSecondObj) {
-//         if(oFirstObj[key] === oSecondObj[key])
-//         console.log('объекты равны')
+// function compareObj(Ostudent1, Ostudent2) {
+//     let oResult = {};
+//     for (const key in Ostudent1) {
+//       if (Ostudent1[key] === Ostudent2[key]) {
+//         oResult[key] = Ostudent1[key];
+//       }
+//       if (!Object.keys(oResult).length) {
+//         return "Объекты не совпадают!";
+//       }
 //     }
-// }
-
-// console.log(ConcatObjects(student1, student2))
+//     return oResult;
+//   }
+  
+//   console.log(compareObj(student1, student2));
 
 
 
 // #### Task 1 👨‍🏫
 
 // Мы на футбольном матче, счет забитых голов одной команды не может превышать 9 мячей. Жаль что нам присылают результат матча в формате '2:5', ведь нам надо это вывести в консоль словами. Давайте напишем программу которая будет за нас переводить формат и выводить результат в консоль. 
+
+// let sCount = prompt('Введите счет');
+
+// let aNumbers = sCount.split(':')
+
+// if(aNumbers.every(item => +item <= 9 && +item >= 0)){
+//     let oNumMap = {
+//         '0' : 'Ноль',
+//         '1' : 'Один',
+//         '2' : 'Два',
+//         '3' : 'Три',
+//         '4' : 'Четыре',
+//         '5' : 'Пять',
+//         '6' : 'Шесть',
+//         '7' : 'Семь',
+//         '8' : 'Восемь',
+//         '9' : 'Девять'
+//     }
+    
+//     console.log('Счет ' + oNumMap[aNumbers[0]] + ' -' + oNumMap[aNumbers[1]]);
+
+// } else {
+//     console.log('Неверные данные');
+// }
+
