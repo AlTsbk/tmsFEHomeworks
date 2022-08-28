@@ -64,7 +64,7 @@ function createCloseButton(myNodelist) {
             div.style.display = "none";
         }
 }
-
+// Добавляем эластичный поиск по элементам списка
 document.querySelector('#elastic').oninput = function () {
     let val = this.value.trim();
     let elasticItems = document.querySelectorAll('.spisok li');
@@ -89,6 +89,9 @@ document.querySelector('#elastic').oninput = function () {
     }
 }
 
+// прикручиваем к поиску цветовое выделение
 function insertMark(string,pos,len){
     return string.slice(0, pos)+ '<mark>'+string.slice(pos, pos+len)+'</mark>'+string.slice(pos+len);
 }
+
+
