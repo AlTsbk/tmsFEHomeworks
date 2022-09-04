@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+#container {
+  padding: 50px 50px;
+}
+#wrapper {
+  border: 2px solid #c3c5c7;
+  border-radius: 10px;
+  width: 600px;
+  margin: auto;
+  padding: 30px;
+}
+#add-todo {
+  display: flex;
+  justify-content: space-between;
+}
+#add {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  background: rgb(37, 160, 51);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+#delete {
+  font-size: 16px;
+  font-weight: 600;
+  background: none;
+  color: rgb(255, 255, 255);
+  background: rgb(103, 121, 142);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+#input-text {
+  border: 1px solid #708095;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 18px;
+}
+.task {
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border: 1px #708095 solid;
+  background-color: #ecf4ff;
+  border-radius: 10px;
+  padding: 10px;
+  color: #454545;
+}
+.oBtn {
+  background: rgb(150, 150, 150);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10%;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 0 15px 15px 0;
+  color: aliceblue;
+}
+.Newcheckbox {
+  margin: 0 15px;
+  font-size: 24px;
+}
+.newcheckbox.checked {
+  background: rgb(124, 221, 124);
+}
+.task-date {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+  align-items: flex-end;
+}
+.date {
+  border: 1px solid rgb(150, 150, 150);
+  padding: 5px;
+  font-size: 12px;
+  color: rgb(120, 120, 120);
+  width: 100px;
+  border-radius: 5;
+}
