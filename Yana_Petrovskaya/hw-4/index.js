@@ -28,29 +28,31 @@
 
 // Task 3.
 
-// let sString = prompt('Введите текст.');
-// let nFrom = +prompt('Введите значение "от".');
-// let nTo = +prompt('Введите значение "до".');
+// trimString();
 
-// trimString(sString, nFrom, nTo);
+// function trimString() {
+//   let sString = prompt('Введите текст.');
+//   let nFrom = +prompt('Введите значение "от".');
+//   let nTo = +prompt('Введите значение "до".');
 
-// function trimString(sString, nFrom, nTo) {
 //   alert(sString.substring(nFrom, nTo));
 // }
 
 // Task 4.
 
-// let nNumber = +prompt('Введите число.');
-// getSumNumbers(nNumber);
+// getSumNumbers ();
 
-// function getSumNumbers(nNumber) {
+// function getSumNumbers() {
+//   let nNumber = +prompt('Введите число.');
 //   sNumber = nNumber.toString();
 //   output = [];
-//   let sum = 0; 
-//   for ( let i = 0; i < sNumber.length; i++) {
-//     sum += +sNumber.charAt(i);
+
+//   for ( let i = 0, len = sNumber.length; i < len; i++) {
+//     output.push(+sNumber.charAt(i));
 //   }
-//   alert(sum);  
+//   let sum = 0;
+//   for (let i = 0; i < output.length; sum += output[i++]);
+//   alert(sum);
 // }
 
 // Task 5.
@@ -61,28 +63,31 @@
 // getSum (nFirstNumber, nLastNumber);
 
 // function getSum(a, b) {
+//   let sum = 0;
 //   if (a === b) {
 //     alert(a + '. Числа одинаковы.');
-//   } else {
-//     let min = Math.min(a, b);
-//     let max = Math.max(a, b);
-//     let sum = 0;
-//     for(let i = min; i <= max; i++) {
+//   } else if (a < b) {
+//     for( let i = a; i <= b; i++) {
 //       sum += i;
 //     }
-//     alert(sum);
-//   } 
-// }
+//   } else if (a > b) {
+//     for( let i = b; i <= a; i++) {
+//       sum += i;
+//     }
+//   }
+//   alert(sum);
 
 // Task 6.
 
 // let bBoolean = true;
+
 // function foo() {
 //   console.log(foo.name);
 // }
 // function boo() {
 //   console.log(boo.name);
 // }
+
 // fooboo(bBoolean, foo, boo);
 // function fooboo(bBoolean, foo, boo) {
 //   if(bBoolean) {
@@ -91,6 +96,7 @@
 //     boo();
 //   }
 // }
+
 // ADVANCED level
 
 // Task 1.
