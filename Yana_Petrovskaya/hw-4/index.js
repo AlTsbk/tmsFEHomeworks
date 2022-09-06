@@ -34,7 +34,7 @@
 //   let sString = prompt('Введите текст.');
 //   let nFrom = +prompt('Введите значение "от".');
 //   let nTo = +prompt('Введите значение "до".');
-  
+
 //   alert(sString.substring(nFrom, nTo));
 // }
 
@@ -76,23 +76,25 @@
 //     }
 //   }
 //   alert(sum);
-// }
 
 // Task 6.
 
 // let bBoolean = true;
-
-// if(bBoolean) {
-//   foo();
-// } else {
-//   boo();
-// }
 
 // function foo() {
 //   console.log(foo.name);
 // }
 // function boo() {
 //   console.log(boo.name);
+// }
+
+// fooboo(bBoolean, foo, boo);
+// function fooboo(bBoolean, foo, boo) {
+//   if(bBoolean) {
+//     foo();
+//   } else {
+//     boo();
+//   }
 // }
 
 // ADVANCED level
@@ -128,7 +130,7 @@
 //   if (n === 0 || m === 0) {
 //     alert('Количество надломов: 0.');
 //   } else {
-//     let nNumberOfBreaks = (n - 1) + (m - 1);
+//     let nNumberOfBreaks = (n - 1) + ((m - 1)*m);
 //   alert('Количество надломов: ' + nNumberOfBreaks);
 //   }
 // }
